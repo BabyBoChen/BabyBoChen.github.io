@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>BabyBo作品集</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="favicon.ico">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<link href="layout.css?v=20221106" rel="stylesheet"/>
+	<style>
+		/* @font-face {
+			font-family: setofont;
+			src: url('https://babybochen.github.io/setofont/NaikaiFont-Regular.ttf') format('truetype');
+		}
+		body { 
+			font-family: "setofont"; 
+		} */
+	</style>
+</head>
+
+<body>
+	<div id="flexWrapper">
+		<div id="topBarWrapper">
+			<button class="btn btn-success" id="btnToggleSideBar">
+				<i class="fas fa-bars"></i>
+			</button>
+			<div id="table" class="d-flex align-content-center flex-wrap "><div id="monitor">歡迎來到BabyBo的作品集！可以透過右邊的💌Email信箱聯絡到我喲！👉👉</div></div>
+			<span id="emailWrapper" style="color:white"><a id="faEmail" href="mailto:tc10131@hotmail.com"><i class="fas fa-envelope fa-2x"></i></a><a class="email" href="mailto:tc10131@hotmail.com">Email: tc10131@hotmail.com</a></span>
+		</div>
+		<div id="contentWrapper">
+			<div id="sideBar" class="side-bar" style="display: none;">
+				<div class="nav-link">
+					<a href="/#!" class="my-link"><i class="fas fa-home"></i>首頁</a>
+				</div>
+				<div class="nav-link">
+					<a class="toggle-collapse" id="collapseFrontendLinks" data-bs-toggle="collapse" aria-controls="frontendLinks" aria-expanded="false" href="#frontendLinks">
+						<i class="fas fa-code"></i>
+						Web前端
+						<i class="fas fa-chevron-down"></i>
+					</a>
+					<div class="collapse" id="frontendLinks" style="margin-top: 10px;">
+						<ul style="text-align: left; list-style-type: none;">
+							<li><a class="my-link" href="/#!/jQuery_homework"><i class="fab fa-js-square"></i>jQuery輪播牆與動畫</a></li>
+							<li><a class="my-link" href="/#!/pairGame"><i class="fab fa-js-square"></i>JS釣魚小遊戲</a></li>
+							<li><a class="my-link" href="/#!/ransomLetter"><i class="fas fa-envelope"></i>WASM勒索信產生器</a></li>
+							<li><a class="my-link" href="/#!/bbljWeather"><i class="fas fa-cloud-sun"></i>Flutter氣象台</a></li>
+							<li><a class="my-link" href="/#!/bbljCalendar"><i class="fas fa-calendar-alt"></i>Canvas月曆</a></li>
+							<li><a class="my-link" href="/#!/jatatable"><i class="fas fa-table"></i>Jatatable.js</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav-link">
+					<a class="toggle-collapse" id="collapsePythonLinks" data-bs-toggle="collapse" aria-controls="pythonLinks" aria-expanded="false" href="#pythonLinks">
+						<i class="fab fa-python"></i>
+						Python作品
+						<i class="fas fa-chevron-down"></i>
+					</a>
+					<div class="collapse" id="pythonLinks" style="margin-top: 10px;">
+						<ul style="text-align: left; list-style-type: none;">
+							<li><a class="my-link" href="/#!/srtPlayer"><i class="far fa-file-video"></i>PyQt5字幕播放器</a></li>
+							<li><a class="my-link" href="/#!/stock_tw"><i class="fas fa-chart-line"></i>Flask台股即時通</a></li>
+							<li><a class="my-link" href="/#!/bbljscooter"><i class="fas fa-motorcycle"></i>FastAPI車車保養手冊</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="nav-link">
+					<a class="my-link" href="/#!/srtPlayerFX"><i class="fab fa-java"></i>JavaFX字幕播放器</a>
+				</div> -->
+				<div class="nav-link">
+					<a class="toggle-collapse" id="collapseJavaLinks" data-bs-toggle="collapse" aria-controls="javaLinks" aria-expanded="false" href="#javaLinks">
+						<i class="fab fa-java"></i>
+						Java作品
+						<i class="fas fa-chevron-down"></i>
+					</a>
+					<div class="collapse" id="javaLinks" style="margin-top: 10px;">
+						<ul style="text-align: left; list-style-type: none;">
+							<li><a class="my-link" href="/#!/srtPlayerFX"><i class="far fa-file-video"></i>JavaFX字幕播放器</a></li>
+							<li><a class="my-link" href="/#!/bbljoverflow"><i class="fas fa-cat"></i>JSP伯夷論壇</a></li>
+							<li><a class="my-link" href="/#!/jdatatable"><i class="fas fa-table"></i>JDataTable</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav-link">
+					<a class="toggle-collapse" id="collapseBlendersLinks" data-bs-toggle="collapse" aria-controls="blenderLinks" aria-expanded="false" href="#blenderLinks">
+						<i class="fas fa-cube"></i>
+						Blender 3D建模
+						<i class="fas fa-chevron-down"></i>
+					</a>
+					<div class="collapse" id="blenderLinks" style="margin-top: 10px;">
+						<ul style="text-align: left;">
+							<li><a class="my-link" href="/#!/kingTut">圖坦卡門與娜夫蒂蒂</a></li>
+							<li><a class="my-link" href="/#!/eren">進擊的巨人：艾連．葉卡</a></li>
+							<li><a class="my-link" href="/#!/mikasa">進擊的巨人：米卡莎．阿卡曼</a></li>
+							<li><a class="my-link" href="/#!/babybo">小男孩Boy</a></li>
+							<li><a class="my-link" href="/#!/spongebobSquarepants">海綿寶寶</a></li>
+							<li><a class="my-link" href="/#!/dog">瑞士山地犬</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav-link">
+					<a class="toggle-collapse" id="collapseCSharpLinks" data-bs-toggle="collapse" aria-controls="cSharpLinks" aria-expanded="false" href="#cSharpLinks">
+						<i class="fab fa-cuttlefish"></i>
+						C#作品
+						<i class="fas fa-chevron-down"></i>
+					</a>
+					<div class="collapse" id="cSharpLinks" style="margin-top: 10px;">
+						<ul style="text-align: left; list-style-type: none;">
+							<li><a class="my-link" href="/#!/mine"><i class="fas fa-bomb"></i>WinForm踩地雷</a></li>
+							<!-- <li><a class="my-link" href="/#!"><i class="fas fa-globe-americas"></i>WinForm環遊世界相簿</a></li> -->
+							<li><a class="my-link" href="/#!/foodma"><i class="fas fa-store"></i>CoreMVC福滿商城</a></li>
+							<li><a class="my-link" href="/#!/socketio"><i class="fas fa-comments"></i>SignalR聊天室</a></li>
+							<li><a class="my-link" href="/#!/razorTodo"><i class="far fa-calendar-check"></i>RazorPage待辦事項</a></li>
+							<li><a class="my-link" href="/#!/dataTableReader"><i class="fas fa-table"></i>WPF資料表轉換器</a></li>
+							<li><a class="my-link" href="/#!/bblj3DViewer"><i class="fab fa-edge"></i>WebView 3D模型檢視器</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav-link">
+					<a class="my-link" href="/#!/pwd_manager"><i class="fas fa-mobile-alt"></i>Flutter密碼管理員</a>
+				</div>
+				<div class="nav-link">
+					<a class="my-link" href="/#!/haterBoy"><i class="fab fa-php"></i>Vue.js+php靠北伯夷</a>
+				</div>
+				<div class="nav-link">
+					<a class="my-link" href="/#!/visitor_count"><i class="fas fa-list-ol"></i>Dart訪客人數</a>
+				</div>
+			</div>
+			<div id="main">
+				<!-- @RenderBody() -->
+			</div>
+		</div>
+	</div>
+
+	<script src="layout.js?v=20221106"></script>
+	<script src="visitorCount.js?v=20221106"></script>
+	<link href="animation.css?v=20221106" rel="stylesheet"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+	<script type="module" src="pages/index.js?v=20221127"></script>
+</body>
+
+</html>

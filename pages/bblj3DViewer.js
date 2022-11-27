@@ -1,0 +1,35 @@
+/** @type {String} */
+export const bblj3DViewer = `
+    <h1 style="text-align:center;">3D模型檢視器</h1>
+    <div style="text-align:center;">
+        <img style="width:100%;max-width:400px;border:1px solid black" src="https://i.imgur.com/sfjoKha.png"/>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>作品簡介：</h2>
+            <p>使用Edge的WebView2引擎，將Three.js函式庫嵌入WPF桌面視窗中所製作出的3D模型檢視器。支援檢視.gltf和.glb兩種3D物件格式。</p>
+            <h2>使用說明：</h2>
+            <ol>
+                <li>支援作業系統：^Windows10。</li>
+                <li>相依套件：.Net 6執行環境（<a href="https://dotnet.microsoft.com/en-us/download/dotnet/6.0" target="_blank">Microsoft</a>）。</li>
+                <li>下載「BBLJ3D模型檢視器」（<a href="https://drive.google.com/file/d/17BRyAOJcx58Bkt28hO0z7IPgyk-Uu9pN/view?usp=sharing" target="_blank">Google Drive</a>）</li>
+                <li>解壓縮「BBLJ3D模型檢視器.zip」（請勿解壓縮至C槽或Programe Files夾料夾內）。</li>
+                <li>將gltf或glb檔案放到\\Contents\\Gltf路徑底下。</li>
+                <li>執行BBLJ3DViewer.Wpf.exe。</li>
+                <li>在上方的下拉式選單選取欲檢視之3D模型。</li>
+                <li>按「開啟」。</li>
+                <li>W鍵和S鍵可前後移動鏡頭（Z-Axis）。</li>
+                <li>方向鍵上下可上下移動鏡頭（Y-Axis）。</li>
+            </ol>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <h2>連結：</h2>
+            <ul>
+                <li>GitHub存放庫：<a href="https://github.com/BabyBoChen/BBLJ3DViewer" target="_blank">https://github.com/BabyBoChen/BBLJ3DViewer</a></li>
+            </ul>
+        </div>
+    </div>
+`;

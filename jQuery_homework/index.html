@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>jQuery Homework</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+        }
+
+        #container {
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        #slideshow {
+            position: relative;
+            width: 60%;
+            height: 400px;
+            margin: auto;
+            overflow: hidden;
+            list-style-type: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        #prevArr {
+            position: absolute;
+            top: 40%;
+            left: 0;
+            color: white;
+            background: linear-gradient(90deg, rgba(0, 0, 0, .75) 0, transparent 100%);
+            padding: 10px;
+        }
+
+        #nextArr {
+            position: absolute;
+            top: 40%;
+            right: 0;
+            color: white;
+            background: linear-gradient(270deg, rgba(0, 0, 0, .75) 0, transparent 100%);
+            padding: 10px;
+        }
+
+        #frame {
+            position: relative;
+
+            width: 100%;
+            height: 100%;
+            transition: transform, 2s;
+        }
+
+        .slide {
+            position: relative;
+            background-color: rgba(0,0,0,0);
+            display: inline-flex;
+            vertical-align: top;
+
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .poster {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        #slide_bottom {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 30%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, .95) 0, transparent 100%);
+        }
+
+        #caption {
+            position: relative;
+            top: 0;
+            width: 100%;
+
+        }
+
+        #caption p {
+            width: 100%;
+            height: 100%;
+            word-break: break-all;
+            white-space: normal;
+            color: white;
+            font-size: xx-large;
+            font-weight: 500;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        #swiper {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 3;
+        }
+
+        .dot {
+            position: relative;
+            display: inline-block;
+            border-radius: 100%;
+            background-color: gray;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .dotSquare {
+            border-radius: 0;
+        }
+
+        .dotWhite {
+            background-color: white;
+        }
+
+        #stars {
+            text-align: center;
+        }
+
+        #stars img {
+            transition: filter 0.5s;
+        }
+
+        .gray {
+            filter: grayscale(100%);
+        }
+
+        #display {
+            text-align: center;
+        }
+
+        #instruction1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20%;
+        }
+
+        #instruction2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20%;
+        }
+        #viewport {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            width: 100%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="./scripts/fontawesome.js"></script>
+
+</head>
+
+<body>
+
+    <div id="container" class="container">
+        <div id="slideshow">
+
+            <div id="frame"></div>
+            <div id="slide_bottom">
+                <div id="caption">
+                    <p></p>
+                </div>
+                <div id="swiper"></div>
+            </div>
+            <i id="prevArr" class='fas fa-angle-left' style='font-size:48px;'></i>
+            <i id="nextArr" class='fas fa-angle-right' style='font-size:48px;'></i>
+
+        </div>
+        <div id="stars">
+        </div>
+        <p id="display"></p>
+        <p id="instruction1">輪播說明：<br>
+            1. 滑鼠停駐於輪播上即可暫停輪播。<br>
+            2. 點擊電影海報會開啟維基百科頁面。<br>
+            3. 點擊左箭頭或右箭頭會輪播上一張或下一張海報。<br>
+            4. 點擊輪播下方的白色圖案（圓或方）即會跳轉至該順位之海報。<br>
+        </p>
+        <p id="instruction2">星星評價說明：<br>
+            1. 滑鼠停駐於任一星星上將會暫停輪播。<br>
+            2. 單擊星星即可為電影評分。<br>
+            3. 重新單擊星星即可修改評分。<br>
+            4. 雙擊星星會給該電影0分的評價<br>
+        </p>
+    </div>
+    <p style="text-align: center;"><a href="./picCentered.html">Homework3: Centering Image</a></p>
+    <canvas id="viewport"></canvas>
+
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/football.js"></script>
+
+</body>
+
+</html>
