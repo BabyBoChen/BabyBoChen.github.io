@@ -28,7 +28,7 @@ const meshes = [];
     let pointLight = createPointLight();
     scene.add(pointLight.target);
     scene.add(pointLight);
-    loadObject3D('BabyBoGoGoGo.glb').then(function (babybo) {
+    loadObject3D('BabyBo.glb').then(function (babybo) {
         scene.add(babybo.scene);
         babybo.scene.position.x -= 0.5;
         rotatingGroups.push(babybo.scene);
