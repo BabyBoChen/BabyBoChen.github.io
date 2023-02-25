@@ -25,6 +25,7 @@ import { bblj3DViewer } from './bblj3DViewer.js';
 import { jdatatable } from './jdatatable.js';
 import { jatatable } from './jatatable.js';
 import { dog } from './dog.js';
+import { blaze } from './blaze.js';
 
 
 /** @type {string} */
@@ -105,7 +106,9 @@ function redirect(){
         main.innerHTML = jatatable;
     }else if(targetPath == "dog") {
         main.innerHTML = dog;
-    } else{
+    }else if(targetPath == "blaze") {
+        main.innerHTML = blaze;
+    } else {
         main.innerHTML = "<p>homepage</p>";
     }
 }
