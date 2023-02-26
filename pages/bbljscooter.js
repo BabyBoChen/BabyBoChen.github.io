@@ -14,7 +14,7 @@ export const bbljscooter = `
             <h2>連結：</h2>
             <ul>
                 <li><a href="https://bbljscooters.azurewebsites.net/" target="_blank">車車保養手冊（Azure）</a></li>
-                <li><a href="https://github.com/BabyBoChen/BBLJScooter" target="_blank">GitHub存放庫：BBLJScooter（暫不開放）</a></li>
+                <li><a href="https://github.com/BabyBoChen/BBLJScooter" target="_blank">GitHub存放庫：BBLJScooter</a></li>
                 <li><a href="https://i.imgur.com/TSzUGKx.png" target="_blank">類別圖（Imgur）</a></li>
             </ul>
         </div>
