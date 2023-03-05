@@ -12,8 +12,8 @@ export const bbljCalendar = `
         <div class="col-sm-6">
         <h2>連結：</h2>
         <ul>
-            <li><a href="https://bblj-calendar.netlify.app/" target="_blank">BBLJ行事曆（Netlify）</a></li>
-            <li><a href="https://github.com/BabyBoChen/bbljCalendar" target="_blank">GitHub存放庫：BBLJ行事曆</a></li>
+            <li><a href="https://bblj-calendar.netlify.app/" target="_blank">BBLJ月曆（Netlify）</a></li>
+            <li><a href="https://github.com/BabyBoChen/bbljCalendar" target="_blank">GitHub存放庫：BBLJ月曆</a></li>
         </ul>
     </div>
     </div>
