@@ -26,6 +26,8 @@ import { jdatatable } from './jdatatable.js';
 import { jatatable } from './jatatable.js';
 import { dog } from './dog.js';
 import { blaze } from './blaze.js';
+import { bbljCalendarApi } from './bbljCalendarApi.js';
+import { bbljPwdManager } from './bbljPwdManager.js';
 
 
 /** @type {string} */
@@ -108,6 +110,10 @@ function redirect(){
         main.innerHTML = dog;
     }else if(targetPath == "blaze") {
         main.innerHTML = blaze;
+    } else if (targetPath == "bbljCalendarApi") {
+        main.innerHTML = bbljCalendarApi;
+    } else if (targetPath == "bbljPwdManager") {
+        main.innerHTML = bbljPwdManager;
     } else {
         main.innerHTML = "<p>homepage</p>";
     }
