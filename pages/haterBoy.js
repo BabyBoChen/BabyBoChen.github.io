@@ -13,7 +13,7 @@ export const haterBoy = `
     <div class="col-sm-6">
         <h2>連結：</h2>
         <ul>
-            <li><a href="https://babybofood.000webhostapp.com/" target="_blank">靠北伯夷（000webhost）</a></li>
+            <li><a href="https://haterbabybo.000webhostapp.com/" target="_blank">靠北伯夷（000webhost）</a></li>
             <li><a href="https://github.com/BabyBoChen/HaterBoy" target="_blank">GitHub存放庫：HaterBoy</a></li>
         </ul>
     </div>
