@@ -28,6 +28,7 @@ import { dog } from './dog.js';
 import { blaze } from './blaze.js';
 import { bbljCalendarApi } from './bbljCalendarApi.js';
 import { bbljPwdManager } from './bbljPwdManager.js';
+import { bblj_Catlord } from './bblj_Catlord.js';
 
 
 /** @type {string} */
@@ -114,6 +115,8 @@ function redirect(){
         main.innerHTML = bbljCalendarApi;
     } else if (targetPath == "bbljPwdManager") {
         main.innerHTML = bbljPwdManager;
+    } else if (targetPath == "bblj_Catlord") {
+        main.innerHTML = bblj_Catlord;
     } else {
         main.innerHTML = "<p>homepage</p>";
     }
