@@ -65,7 +65,7 @@ export const bbljPwdManager = `
         <h2>安裝說明：</h2>
         <ul style="list-style-type: none;">
             <li>系統需求：Android ^6.0</li>
-            <li>1. 下載<a id="downloadApp" href="https://drive.google.com/file/d/1lKpBXwHQfQuPDevNEs0_zgJKe4qLKRY9/view?usp=sharing" target="_blank">com.bblj.bbljpassword.apk檔</a></li>
+            <li>1. 下載<a id="downloadApp" href="https://drive.google.com/file/d/12gvZ9wSxsEZ5GujdWm9K-6lOC9FaOzKL/view?usp=sharing" target="_blank">com.bblj.bbljpassword.apk檔</a></li>
             <li>2. 將apk檔放到手機的Download資料夾</li>
             <li>（3. 開啟允許安裝未知的應用程式）</li>
             <li>4. 於手機上點擊com.bblj.bbljpassword.apk即可安裝</li>
