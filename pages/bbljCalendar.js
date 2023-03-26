@@ -10,15 +10,11 @@ export const bbljCalendar = `
             <p>BBLJ月曆是一款使用Canvas API繪製出的JS月曆元件，結合「<a href="https://data.gov.tw/dataset/14718" target="_blank">中華民國政府行政機關辦公日曆表</a>」所提供的資料，標示出各年度的平日以及例假日相關資訊。</p>
         </div>
         <div class="col-sm-6">
-        <h2>連結：</h2>
-        <ul>
-            <li><a href="https://bblj-calendar.netlify.app/" target="_blank">BBLJ月曆（Netlify）</a></li>
-            <li><a href="https://github.com/BabyBoChen/bbljCalendar" target="_blank">GitHub存放庫：BBLJ月曆</a></li>
-        </ul>
+            <h2>連結：</h2>
+            <ul>
+                <li><a href="https://bblj-calendar.netlify.app/" target="_blank">BBLJ月曆（Netlify）</a></li>
+                <li><a href="https://github.com/BabyBoChen/bbljCalendar" target="_blank">GitHub存放庫：BBLJCalendar</a></li>
+            </ul>
+        </div>
     </div>
-    </div>
-    
 `;
-
-
-//<a href="https://bblj-calendar.netlify.app/" target="_blank">行事曆</a>
