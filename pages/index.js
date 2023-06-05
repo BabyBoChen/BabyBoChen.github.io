@@ -118,6 +118,8 @@ function redirect(){
         main.innerHTML = bbljPwdManager;
     } else if (targetPath == "bblj_Catlord") {
         main.innerHTML = bblj_Catlord;
+    } else if (targetPath == "fan") {
+        main.innerHTML = fan;
     } else {
         main.innerHTML = "<p>homepage</p>";
     }
