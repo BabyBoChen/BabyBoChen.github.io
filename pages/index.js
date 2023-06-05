@@ -29,6 +29,7 @@ import { blaze } from './blaze.js';
 import { bbljCalendarApi } from './bbljCalendarApi.js';
 import { bbljPwdManager } from './bbljPwdManager.js';
 import { bblj_Catlord } from './bblj_Catlord.js';
+import { fan } from './fan.js';
 
 
 /** @type {string} */
