@@ -2,7 +2,7 @@
 export const fan = `
     <h1 style="text-align:center;">電風扇</h1>
     <div style="text-align:center;">
-        <img style="width:100%;max-width:400px;border:1px solid black" src="https://i.imgur.com/rqUA1DV.png"/>
+        <img style="width:100%;max-width:400px;border:1px solid black" src="https://i.imgur.com/DJayOa8.png"/>
     </div>
     <div class="row">
         <div class="col-sm-6">
