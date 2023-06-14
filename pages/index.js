@@ -30,6 +30,7 @@ import { bbljCalendarApi } from './bbljCalendarApi.js';
 import { bbljPwdManager } from './bbljPwdManager.js';
 import { bblj_Catlord } from './bblj_Catlord.js';
 import { fan } from './fan.js';
+import { chinookBi } from './chinookBi.js';
 
 
 /** @type {string} */
@@ -120,6 +121,8 @@ function redirect(){
         main.innerHTML = bblj_Catlord;
     } else if (targetPath == "fan") {
         main.innerHTML = fan;
+    } else if (targetPath == "chinookBi") {
+        main.innerHTML = chinookBi;
     } else {
         main.innerHTML = "<p>homepage</p>";
     }
