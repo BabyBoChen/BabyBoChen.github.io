@@ -31,6 +31,7 @@ import { bbljPwdManager } from './bbljPwdManager.js';
 import { bblj_Catlord } from './bblj_Catlord.js';
 import { fan } from './fan.js';
 import { chinookBi } from './chinookBi.js';
+import { lihit } from './lihit.js';
 
 
 /** @type {string} */
@@ -123,6 +124,8 @@ function redirect(){
         main.innerHTML = fan;
     } else if (targetPath == "chinookBi") {
         main.innerHTML = chinookBi;
+    } else if (targetPath == "lihit") {
+        main.innerHTML = lihit;
     } else {
         main.innerHTML = "<p>homepage</p>";
     }
