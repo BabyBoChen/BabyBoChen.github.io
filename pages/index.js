@@ -32,6 +32,7 @@ import { bblj_Catlord } from './bblj_Catlord.js';
 import { fan } from './fan.js';
 import { chinookBi } from './chinookBi.js';
 import { lihit } from './lihit.js';
+import { bbljtotp } from "./bbljtotp.js";
 
 
 /** @type {string} */
@@ -126,6 +127,8 @@ function redirect(){
         main.innerHTML = chinookBi;
     } else if (targetPath == "lihit") {
         main.innerHTML = lihit;
+    } else if (targetPath == "bbljtotp") {
+        main.innerHTML = bbljtotp;
     } else {
         main.innerHTML = "<p>homepage</p>";
     }
