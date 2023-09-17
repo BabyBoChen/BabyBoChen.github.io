@@ -33,6 +33,7 @@ import { fan } from './fan.js';
 import { chinookBi } from './chinookBi.js';
 import { lihit } from './lihit.js';
 import { bbljtotp } from "./bbljtotp.js";
+import { mannequinW } from "./mannequinW.js";
 
 
 /** @type {string} */
@@ -129,6 +130,8 @@ function redirect(){
         main.innerHTML = lihit;
     } else if (targetPath == "bbljtotp") {
         main.innerHTML = bbljtotp;
+    }  else if (targetPath == "mannequinW") {
+        main.innerHTML = mannequinW;
     } else {
         main.innerHTML = "<p>homepage</p>";
     }
