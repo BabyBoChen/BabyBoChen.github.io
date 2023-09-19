@@ -7,7 +7,7 @@ export const blaze = `
     <div class="row">
         <div class="col-sm-6">
             <h2>作品簡介：</h2>
-            <p>使用Blender 3D繪圖軟體製作的3D模型臨摹作品——飆風Blaze（旋風戰車隊）（glb檔大小：1.93MB、6974個vertice）。對於飆風的輪胎胎紋，這個3D模型使用法線貼圖（normal map）讓輪胎的材質可以具有立體感。</p>
+            <p>使用Blender 3D繪圖軟體製作的3D模型臨摹作品——飆速Blaze（旋風戰車隊）（glb檔大小：1.93MB、6974個vertice）。對於飆速的輪胎胎紋，這個3D模型使用法線貼圖（normal map）讓輪胎的材質可以具有立體感。</p>
         </div>
         <div class="col-sm-6">
             <h2>模型展示操作說明：</h2>
