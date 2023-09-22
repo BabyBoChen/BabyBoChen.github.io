@@ -34,6 +34,7 @@ import { chinookBi } from './chinookBi.js';
 import { lihit } from './lihit.js';
 import { bbljtotp } from "./bbljtotp.js";
 import { mannequinW } from "./mannequinW.js";
+import {elephant} from "./elephant.js";
 
 
 /** @type {string} */
@@ -130,8 +131,10 @@ function redirect(){
         main.innerHTML = lihit;
     } else if (targetPath == "bbljtotp") {
         main.innerHTML = bbljtotp;
-    }  else if (targetPath == "mannequinW") {
+    } else if (targetPath == "mannequinW") {
         main.innerHTML = mannequinW;
+    } else if (targetPath == "elephant") {
+        main.innerHTML = elephant;
     } else {
         main.innerHTML = "<p>homepage</p>";
     }
