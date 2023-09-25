@@ -34,7 +34,8 @@ import { chinookBi } from './chinookBi.js';
 import { lihit } from './lihit.js';
 import { bbljtotp } from "./bbljtotp.js";
 import { mannequinW } from "./mannequinW.js";
-import {elephant} from "./elephant.js";
+import { mannequinM } from "./mannequinM.js"
+import { elephant } from "./elephant.js";
 
 
 /** @type {string} */
@@ -43,79 +44,79 @@ const root = window.location.protocol + "//" + window.location.host;
 /** @type {HTMLDivElement} */
 const main = document.getElementById("main");
 
-function redirect(){
+function redirect() {
     let rootRe = new RegExp(root);
     let targetPath = window.location.href.replace(rootRe, '').replace("/#!", '').replace('/', '');
-    if (targetPath == ""){
+    if (targetPath == "") {
         main.innerHTML = "<p>homepage</p>";
-    }else if(targetPath == "foodma"){
+    } else if (targetPath == "foodma") {
         main.innerHTML = foodma;
-    }else if(targetPath == "jQuery_homework"){
+    } else if (targetPath == "jQuery_homework") {
         main.innerHTML = jQueryHomework;
-    }else if(targetPath == "pairGame"){
+    } else if (targetPath == "pairGame") {
         main.innerHTML = pairGame;
-    }else if(targetPath == "srtPlayer"){
+    } else if (targetPath == "srtPlayer") {
         main.innerHTML = srtPlayer;
-    }else if(targetPath == "stock_tw"){
+    } else if (targetPath == "stock_tw") {
         main.innerHTML = stockTw;
-    }else if(targetPath == "srtPlayerFX"){
+    } else if (targetPath == "srtPlayerFX") {
         main.innerHTML = srtPlayerFX;
-    }else if(targetPath == "kingTut"){
+    } else if (targetPath == "kingTut") {
         main.innerHTML = kingTut;
-    }else if(targetPath == "eren"){
+    } else if (targetPath == "eren") {
         main.innerHTML = eren;
-    }else if(targetPath == "mikasa"){
+    } else if (targetPath == "mikasa") {
         main.innerHTML = mikasa;
-    }else if(targetPath == "pwd_manager"){
+    } else if (targetPath == "pwd_manager") {
         main.innerHTML = pwd_manager;
         const downloadApp = document.getElementById("downloadApp");
-        downloadApp.addEventListener("click",function(e){
+        downloadApp.addEventListener("click", function (e) {
             e.preventDefault();
             let res = confirm("是否確定要下載此app？");
-            if(res){
+            if (res) {
                 window.open('https://drive.google.com/file/d/1QJEhdqZLAXZW4qhyI-tb7Z9FsS1R4tR-/view?usp=sharing');
-            }else{
+            } else {
                 return;
             }
         });
-    }else if(targetPath == "haterBoy"){
+    } else if (targetPath == "haterBoy") {
         main.innerHTML = haterBoy;
-    }else if(targetPath == "razorTodo"){
+    } else if (targetPath == "razorTodo") {
         main.innerHTML = razorTodo;
-    }else if(targetPath == "mine"){
+    } else if (targetPath == "mine") {
         main.innerHTML = mine;
-    }else if(targetPath == "socketio"){
+    } else if (targetPath == "socketio") {
         main.innerHTML = socketio;
-    }else if(targetPath == "bbljoverflow"){
+    } else if (targetPath == "bbljoverflow") {
         main.innerHTML = bbljoverflow;
-    }else if(targetPath == "bbljWeather"){
+    } else if (targetPath == "bbljWeather") {
         main.innerHTML = bbljWeather;
-    }else if(targetPath == "ransomLetter"){
+    } else if (targetPath == "ransomLetter") {
         main.innerHTML = ransomLetter;
-    }else if(targetPath == "bbljCalendar"){
+    } else if (targetPath == "bbljCalendar") {
         main.innerHTML = bbljCalendar;
-    }else if(targetPath == "bbljscooter"){
+    } else if (targetPath == "bbljscooter") {
         main.innerHTML = bbljscooter;
-    }else if(targetPath == "visitor_count"){
+    } else if (targetPath == "visitor_count") {
         main.innerHTML = visitorCount;
-        getVisitorCt('https://bblj-my-dart.azurewebsites.net/').then(function(count){
+        getVisitorCt('https://bblj-my-dart.azurewebsites.net/').then(function (count) {
             document.getElementById('spanVisitorCt').innerHTML = count;
         });
-    }else if(targetPath == "dataTableReader"){
+    } else if (targetPath == "dataTableReader") {
         main.innerHTML = dataTableReader;
-    }else if(targetPath == "babybo"){
+    } else if (targetPath == "babybo") {
         main.innerHTML = babybo;
-    }else if(targetPath == "spongebobSquarepants"){
+    } else if (targetPath == "spongebobSquarepants") {
         main.innerHTML = spongebobSquarepants;
-    }else if(targetPath == "bblj3DViewer"){
+    } else if (targetPath == "bblj3DViewer") {
         main.innerHTML = bblj3DViewer;
-    }else if(targetPath == "jdatatable"){
+    } else if (targetPath == "jdatatable") {
         main.innerHTML = jdatatable;
-    }else if(targetPath == "jatatable"){
+    } else if (targetPath == "jatatable") {
         main.innerHTML = jatatable;
-    }else if(targetPath == "dog") {
+    } else if (targetPath == "dog") {
         main.innerHTML = dog;
-    }else if(targetPath == "blaze") {
+    } else if (targetPath == "blaze") {
         main.innerHTML = blaze;
     } else if (targetPath == "bbljCalendarApi") {
         main.innerHTML = bbljCalendarApi;
@@ -133,6 +134,8 @@ function redirect(){
         main.innerHTML = bbljtotp;
     } else if (targetPath == "mannequinW") {
         main.innerHTML = mannequinW;
+    } else if (targetPath == "mannequinM") {
+        main.innerHTML = mannequinM;
     } else if (targetPath == "elephant") {
         main.innerHTML = elephant;
     } else {
@@ -140,10 +143,10 @@ function redirect(){
     }
 }
 
-window.addEventListener('DOMContentLoaded', function(e) {
+window.addEventListener('DOMContentLoaded', function (e) {
     redirect();
 });
 
-window.addEventListener('popstate', function(e) {
+window.addEventListener('popstate', function (e) {
     redirect();
 });
