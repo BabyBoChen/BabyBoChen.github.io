@@ -10,6 +10,7 @@ export const jatatable = `
         <div class="col-sm-6">
             <h2>簡介：</h2>
             <p>Jatatable.js是一款擴充HTML table元素的javascript函式庫。使用Jatatable.js可以輕易地將table元素變成可以自由調整表格欄位寬度的jatatable元件。自由調整表格欄位寬度的功能可大幅地增加table元素的實用性，並且讓使用者可以專注於他們所關心的資料。此外，Jatatable.js也適用於行動版網頁開發。使用方式請見GitHub存於庫的readme。</p>
+            <p>update: 推薦一個強大的開源js套件——<a href="https://tabulator.info/" target="_blank">Tabulator</a>。該套件讓table元素可以具有豐富多樣的表格互動功能，包含sorting、重新排列表頭、前後端資料傳輸等，為使用者提供更加便捷的操作模式。</p>
         </div>
         <div class="col-sm-6">
             <h2>連結：</h2>
