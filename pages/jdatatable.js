@@ -19,28 +19,33 @@ export const jdatatable = `
                 <br/>
                 <span><span class="java-comment">//Insert new row</span></span><br/>
                 <span>DataRow <span class="java-var">newRow</span> = <span class="java-var">dt</span>.NewRow();</span><br/>
-                <span><span class="java-var">newRow</span>.SetCellValue(<span class="java-string">"AlbumId"</span>, 999);</span><br/>
-                <span><span class="java-var">newRow</span>.SetCellValue(<span class="java-string">"Title"</span>, <span class="java-string"></span>"Test1");</span><br/>
-                <span><span class="java-var">newRow</span>.SetCellValue(<span class="java-string">"ArtistId"</span>, 1);</span><br/>
+                <span><span class="java-var">newRow</span>.setCellValue(<span class="java-string">"AlbumId"</span>, 999);</span><br/>
+                <span><span class="java-var">newRow</span>.setCellValue(<span class="java-string">"Title"</span>, <span class="java-string"></span>"Test1");</span><br/>
+                <span><span class="java-var">newRow</span>.setCellValue(<span class="java-string">"ArtistId"</span>, 1);</span><br/>
                 <span><span class="java-var">dt</span>.getRows().add(0, <span class="java-var">newRow</span>);</span><br/>
                 <br/>
                 <span><span class="java-comment">//Delete row</span></span><br/>
                 <span>DataRow <span class="java-var">toDelete</span> = <span class="java-var">dt</span>.getRows().get(2);</span><br/>
-                <span><span class="java-var">toDelete</span>.Delete();</span><br/>
+                <span><span class="java-var">toDelete</span>.delete();</span><br/>
                 <br/>
                 <span><span class="java-comment">//Update row</span></span><br/>
                 <span>DataRow <span class="java-var">toModified</span> = <span class="java-var">dt</span>.getRows().get(1);</span><br/>
-                <span><span class="java-var">toModified</span>.SetCellValue(<span class="java-string">"Title"</span>, <span class="java-string">"xxxxxx"</span>);</span><br/>
+                <span><span class="java-var">toModified</span>.setCellValue(<span class="java-string">"Title"</span>, <span class="java-string">"xxxxxx"</span>);</span><br/>
                 <br/>
                 <span><span class="java-comment">//Loop through all data cells</span></span><br/>
                 <span><span class="java-cond">for</span>(DataRow <span class="java-var">row</span> : <span class="java-var">dt</span>.getRows()) {</span><br/>
                 <span class="indent"></span><span><span class="java-cond">for</span>(DataColumn <span class="java-var">col</span> : <span class="java-var">dt</span>.getColumns()) {</span><br/>
-                <span class="indent"></span><span class="indent"></span><span>System.out.print(<span class="java-var">row</span>.GetCellValue(<span class="java-var">col</span>.getColumnName()));</span><br/>
+                <span class="indent"></span><span class="indent"></span><span>System.out.print(<span class="java-var">row</span>.getCellValue(<span class="java-var">col</span>.getColumnName()));</span><br/>
                 <span class="indent"></span><span class="indent"></span><span>System.out.print(<span class="java-string">"; "</span>);</span><br/>
                 <span class="indent"></span><span>}</span><br/>
                 <span class="indent"></span><span>System.<span class="java-string">out</span>.print(<span class="java-var">row</span>.getRowState()); <span class="java-comment">//Print row state (Added,Deleted,Detached,Modified,Unchanged)</span></span><br/>
                 <span class="indent"></span><span>System.<span class="java-string">out</span>.println();</span><br/>
-                <span>}</span><br/>
+                <span>}</span>
+                <br/>
+                <br/>
+                <span><span class="java-comment">//Convert to List&lt;Map&lt;String, Object&gt;&gt;</span></span><br/>
+                <span>List&lt;Map&lt;String, Object&gt;&gt;&nbsp;<span class="java-var">rows</span>&nbsp;=&nbsp;<span class="java-var">dt</span>.toItemArrays();<span class="java-comment">//pass rows into org.json.JSONArray's constructor to create an json array</span></span>
+                <br/>
                 <span>...</span>
             </code>
         </div>
