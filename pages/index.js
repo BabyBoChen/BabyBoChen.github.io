@@ -36,6 +36,8 @@ import { bbljtotp } from "./bbljtotp.js";
 import { mannequinW } from "./mannequinW.js";
 import { mannequinM } from "./mannequinM.js"
 import { elephant } from "./elephant.js";
+import { pgdbcontext } from "./pgdbcontext.js";
+import { bbljfooddiary } from "./bbljfooddiary.js";
 
 
 /** @type {string} */
@@ -138,7 +140,11 @@ function redirect() {
         main.innerHTML = mannequinM;
     } else if (targetPath == "elephant") {
         main.innerHTML = elephant;
-    } else {
+    } else if (targetPath == "pgdbcontext") {
+        main.innerHTML = pgdbcontext;
+    } else if (targetPath == "bbljfooddiary") {
+        main.innerHTML = bbljfooddiary;
+    }else {
         main.innerHTML = "<p>homepage</p>";
     }
 }
