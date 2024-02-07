@@ -1,0 +1,1 @@
+import{getVisitorCt}from"./visitorCount.mjs";function visitorCountController(app){app.controller("visitorCountController",function($scope){$scope.visitorCnt=0;getVisitorCt("https://bblj-my-dart.azurewebsites.net/").then(function(count){$scope.visitorCnt=count})})}export{visitorCountController};

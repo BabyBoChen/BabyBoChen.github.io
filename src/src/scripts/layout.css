@@ -1,0 +1,209 @@
+:root{
+    --monitor-width: 0px;
+}
+
+.row{
+    margin: 0px;
+}
+
+#flexWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#topBarWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    background-color: dimgray;
+    align-items: center;
+}
+
+#btnToggleSideBar {
+    outline: none !important;
+    box-shadow: none !important;
+    flex:1;
+}
+
+#table{
+    flex-grow: 100;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+
+}
+
+#monitor{
+    position: relative;
+    display: inline-block;
+    left:100%;
+    margin-top: 0px;
+    color: white;
+    font-weight:700;    
+}
+
+#emailWrapper{
+    flex-grow: 1;
+    white-space: nowrap;
+}
+
+#faEmail, #faEmail:hover{
+    color:white;
+}
+
+.email{
+    display: inline;
+    color:white;
+}
+
+.email:hover{
+    color:white;
+}
+
+#contentWrapper {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .email{
+        display: none;
+        color:white;
+    }
+
+    #contentWrapper {
+        width: 100%;
+        position: relative;
+        display: flex;
+        overflow: auto;
+    }
+
+    #sideBar {
+        position: absolute;
+        width: 240px;
+        top: 0px;
+        bottom: 0px;
+        height: 100%;
+        transition: all 0.5s ease-out;
+        z-index:99;
+    }
+}
+
+#sideBar {
+    flex-basis: 240px;
+    flex-shrink: 0;
+    height: 100%;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s ease-out;
+    background-color: white;
+    overflow: auto;
+    background-color: lightblue;
+}
+
+#sideBar.off {
+    margin-left: -200px;
+    flex-basis: -200px;
+    opacity: 0.5;
+    transition: all 0.5s ease-out;
+}
+
+.nav-link {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid dimgray;
+    text-align: center;
+}
+
+.nav-link:last-child{
+    margin-bottom: 30px;
+}
+
+ul {
+    padding-left: 5px !important;
+}
+
+#mainWrapper {
+    overflow: auto;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+
+    #mainWrapper {
+        padding-left: 45px;
+    }
+}
+
+#main{
+    width: 100%;
+}
+
+iframe, object, embed {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel-pic{
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-pic img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.code-section{
+    width:80%;
+    background-color:#e6e6e6;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 576px) {
+    .code-section{
+        width:90%;
+        background-color:#e6e6e6;
+        white-space: nowrap;
+        overflow: auto;
+    }
+}
+
+.code-section span{
+    display: inline-block;
+}
+
+.indent{
+    display: inline-block;
+    width:2rem;
+}
+
+.java-var{
+    color:rgb(128, 96, 0);
+}
+.java-string{
+    color:rgb(0, 0, 255);
+}
+.java-cond{
+    font-weight: bolder;
+    color:rgb(102, 0, 102);
+}
+.java-comment{
+    color:rgb(0, 102, 0);
+}
