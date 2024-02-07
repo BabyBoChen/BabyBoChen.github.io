@@ -2,11 +2,12 @@ import { getVisitorCt } from "./visitorCount.mjs";
 
 /** @param {angular.IModule} app  */
 function visitorCountController(app) {
-    app.controller("visitorCountController", async function($scope) {
+    app.controller("visitorCountController", function($scope) {
         $scope.visitorCnt = 0;
-        let count = await getVisitorCt('https://bblj-my-dart.azurewebsites.net/');
-        $scope.visitorCnt = count;
-        console.log($scope.visitorCnt);
+        getVisitorCt('https://bblj-my-dart.azurewebsites.net/').then(function(count){
+            $scope.visitorCnt = count;
+            console.log($scope.visitorCnt);
+        });
     });
 }
 
