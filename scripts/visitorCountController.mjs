@@ -6,6 +6,7 @@ function visitorCountController(app) {
         $scope.visitorCnt = 0;
         getVisitorCt('https://bblj-my-dart.azurewebsites.net/').then(function(count){
             $scope.visitorCnt = count;
+            $scope.$applyAsync();
             console.log($scope.visitorCnt);
         });
     });
