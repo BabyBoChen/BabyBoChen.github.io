@@ -1,3 +1,5 @@
-/imgur
-/test
+imgur
+test
 .vs/
+src/dist
+src/node_modules
