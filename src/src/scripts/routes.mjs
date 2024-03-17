@@ -164,6 +164,11 @@ const ROUTE_TEMPLATEURLS = [
         route: "/bbljfooddiary",
         templateUrl: "views/bbljfooddiary.html",
     },
+    {
+        route: "/py_prop_gen",
+        templateUrl: "views/py_prop_gen.html",
+        controller: "py_prop_genController"
+    },
     // {
     //     route: "/",
     //     templateUrl: "views/.html",
