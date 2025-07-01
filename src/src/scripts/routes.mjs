@@ -173,6 +173,11 @@ const ROUTE_TEMPLATEURLS = [
         route: "/bbljreview",
         templateUrl: "views/bbljreview.html",
     },
+    {
+        route: "/googleSearch",
+        templateUrl: "views/googleSearch.html",
+        controller: "googleSearchController"
+    },
     // {
     //     route: "/",
     //     templateUrl: "views/.html",
